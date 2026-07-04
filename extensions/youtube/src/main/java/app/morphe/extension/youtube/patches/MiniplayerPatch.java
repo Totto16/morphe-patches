@@ -17,8 +17,10 @@ import static app.morphe.extension.youtube.patches.MiniplayerPatch.MiniplayerTyp
 import static app.morphe.extension.youtube.patches.MiniplayerPatch.MiniplayerType.MODERN_4;
 import static app.morphe.extension.youtube.settings.Settings.MINIPLAYER_DISABLE_HORIZONTAL_DRAG;
 import static app.morphe.extension.youtube.settings.Settings.MINIPLAYER_DISABLE_HORIZONTAL_DRAG_PLAYBACK;
+import static app.morphe.extension.youtube.settings.Settings.MINIPLAYER_DISABLE_HORIZONTAL_REPOSITION;
 
 import android.content.res.ColorStateList;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -86,6 +88,7 @@ public final class MiniplayerPatch {
     }
 
     private static final int MINIPLAYER_SIZE;
+    private static boolean offScreenMiniplayerButtonPressed = false;
 
     static {
         // YT appears to use the device screen dip width, plus an unknown fixed horizontal padding size.
@@ -370,6 +373,46 @@ public final class MiniplayerPatch {
      */
     public static boolean pausePlaybackWithHorizontalDrag() {
         return MINIPLAYER_HORIZONTAL_DRAG_ENABLED && !MINIPLAYER_DISABLE_HORIZONTAL_DRAG_PLAYBACK.get();
+    }
+
+    /**
+     * Injection point.
+     */
+    public static void enableOffScreenMiniplayerButtonPressed() {
+        if (!MINIPLAYER_DISABLE_HORIZONTAL_REPOSITION.get()) {
+            return;
+        }
+
+        offScreenMiniplayerButtonPressed = true;
+    }
+
+    /**
+     * Injection point.
+     */
+    public static Rect blockOffscreenMiniplayerHorizontalReposition(Rect originalRect, Rect previousRect, int screenWidth) {
+        if (!MINIPLAYER_DISABLE_HORIZONTAL_REPOSITION.get()) {
+            return originalRect;
+        }
+
+        if (offScreenMiniplayerButtonPressed) {
+            offScreenMiniplayerButtonPressed = false;
+            return originalRect;
+        }
+
+        int previousRectLeft = previousRect.left;
+        int originalWidth = originalRect.width();
+
+        if (previousRectLeft != screenWidth || originalRect.left >= screenWidth) {
+            if (previousRectLeft < 0 && previousRect.right == 0 && originalRect.right > 0) {
+                originalRect.left = -originalWidth;
+                originalRect.right = 0;
+            }
+        } else {
+            originalRect.left = screenWidth;
+            originalRect.right = screenWidth + originalWidth;
+        }
+
+        return originalRect;
     }
 
     /**

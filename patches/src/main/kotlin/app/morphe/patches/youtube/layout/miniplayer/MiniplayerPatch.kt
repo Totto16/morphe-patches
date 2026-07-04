@@ -18,6 +18,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.methodCall
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
+import app.morphe.patches.all.misc.resources.ResourceType
+import app.morphe.patches.all.misc.resources.resourceLiteral
 import app.morphe.patches.shared.misc.settings.preference.BasePreference
 import app.morphe.patches.shared.misc.settings.preference.InputType
 import app.morphe.patches.shared.misc.settings.preference.ListPreference
@@ -42,6 +44,7 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
@@ -77,6 +80,7 @@ val miniplayerPatch = bytecodePatch(
         preferences += SwitchPreference("morphe_miniplayer_disable_drag_and_drop", summary = true)
         preferences += SwitchPreference("morphe_miniplayer_disable_horizontal_drag", summary = true)
         preferences += SwitchPreference("morphe_miniplayer_disable_horizontal_drag_playback", summary = true)
+        preferences += SwitchPreference("morphe_miniplayer_disable_horizontal_reposition", summary = true)
         preferences += SwitchPreference("morphe_miniplayer_disable_rounded_corners")
         preferences += SwitchPreference("morphe_miniplayer_hide_overlay_buttons")
         preferences += TextPreference("morphe_miniplayer_width_dip", inputType = InputType.NUMBER)
@@ -299,12 +303,52 @@ val miniplayerPatch = bytecodePatch(
             """
                 invoke-static { }, $EXTENSION_CLASS->pausePlaybackWithHorizontalDrag()Z
                 move-result v0
-                if-eqz v0, :allow_horizontal_drag_playback
+                if-eqz v0, :pause_playback_with_horizontal_drag
                 return-void
-                :allow_horizontal_drag_playback
+                :pause_playback_with_horizontal_drag
                 nop
             """
         )
+
+        MiniplayerRectDragFieldsNameFingerprint.instructionMatches.let { miniplayerRectDragFieldsNameInstructionMatches ->
+            MiniplayerRectDragFieldsNameFingerprint.method.let { miniplayerRectDragFieldsNameMethod ->
+                Fingerprint(
+                    definingClass = miniplayerRectDragFieldsNameMethod.definingClass,
+                    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
+                    returnType = "V",
+                    parameters = listOf("Landroid/graphics/Rect;"),
+                ).let {
+                    val previousRectParamFieldAccess =
+                        miniplayerRectDragFieldsNameMethod.getInstruction<ReferenceInstruction>(
+                            miniplayerRectDragFieldsNameInstructionMatches[1].index
+                        ).reference
+                    val screenWidthFieldAccess =
+                        miniplayerRectDragFieldsNameMethod.getInstruction<ReferenceInstruction>(
+                            miniplayerRectDragFieldsNameInstructionMatches.last().index
+                        ).reference
+
+                    it.method.addInstructions(
+                        0,
+                        """
+                            iget-object v0, p0, $previousRectParamFieldAccess
+                            iget v1, p0, $screenWidthFieldAccess
+                            invoke-static { p1, v0, v1 }, $EXTENSION_CLASS->blockOffscreenMiniplayerHorizontalReposition(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
+                            move-result-object p1
+                        """
+                    )
+                }
+
+                Fingerprint(
+                    definingClass = "Lcom/google/android/apps/youtube/app/watch/nextgenwatch/ui/NextGenWatchLayout;",
+                    name = "onInterceptTouchEvent",
+                ).method.addInstructions(
+                    0,
+                    """
+                        invoke-static { }, $EXTENSION_CLASS->enableOffScreenMiniplayerButtonPressed()V
+                    """
+                )
+            }
+        }
 
         MiniplayerModernConstructorFingerprint.insertMiniplayerFeatureFlagBooleanOverride(
             MINIPLAYER_ANIMATED_EXPAND_FEATURE_KEY,
