@@ -47,7 +47,7 @@ internal const val EXTENSION_CLASS =
 /**
  * Old vendor id for maximum backwards compatibility.
  */
-internal const val GMS_CORE_VENDOR_GROUP_ID = "app.revanced"
+internal const val GMS_CORE_VENDOR_GROUP_ID = "app.morphe"
 
 /**
  * A patch that allows patched Google apps to run without root and under a different package name
@@ -548,6 +548,8 @@ fun gmsCoreSupportResourcePatch(
                 // GmsCore presence detection in extension.
                 application.appendChild("meta-data") {
                     setAttribute("android:name", "app.revanced.MICROG_PACKAGE_NAME")
+                    // TODO: The name of this metadata should be dynamic.
+                    setAttribute("android:name", "app.morphe.MICROG_PACKAGE_NAME")
                     setAttribute("android:value", "$GMS_CORE_VENDOR_GROUP_ID.android.gms")
                 }
             }
