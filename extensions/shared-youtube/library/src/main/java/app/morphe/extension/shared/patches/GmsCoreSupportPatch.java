@@ -879,12 +879,13 @@ public class GmsCoreSupportPatch {
         //noinspection SwitchStatementWithTooFewBranches
         return switch (getGmsCoreVendorGroupId()) {
             case "app.revanced" -> "https://morphe.software/microg";
+            case "app.morphe" -> "https://morphe.software/microg";
             default -> getGmsCoreVendorGroupId() + ".android.gms";
         };
     }
 
     @SuppressWarnings("SameReturnValue")
     private static String getGmsCoreVendorGroupId() {
-        return "app.revanced"; // Modified during patching.
+        return "app.morphe"; // Modified during patching.
     }
 }
