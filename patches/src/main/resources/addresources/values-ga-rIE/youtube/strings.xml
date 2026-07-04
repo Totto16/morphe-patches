@@ -950,6 +950,8 @@ Má mhúchtar é níos déanaí, moltar sonraí na haipe a ghlanadh chun fabhtan
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Coscann sé an t-imreoir íoslaghdaithe a tharraingt chuig coirnéil éagsúla den scáileán.</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Díchumasaigh gotha tarraingthe cothrománach</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Coscann sé seo dúnadh an mhionimreoir trína shlaodadh go cothrománach as an scáileán.</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Díchumasaigh seinn le tarrac uafásach</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Stopfaidh an seinn nuair a tharrtar an mini-pheataíocht ar shiúl ón scáileán</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Folaigh cnaipí forleagan</string>
   <string name="morphe_miniplayer_width_dip_title">Méid réamhshocraithe</string>
   <string name="morphe_miniplayer_width_dip_summary">Socraigh an méid tosaigh ar an scáileán, i bpicteilíní</string>

@@ -950,6 +950,8 @@ Dacă este dezactivat ulterior, se recomandă să ștergeți datele aplicației 
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Împiedică tragerea miniplayerului în diferite colțuri ale ecranului</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Dezactivează gestul de glisare orizontală</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Împiedică închiderea miniplayerului prin glisarea lui orizontală în afara ecranului</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Dezactivează redarea cu glisare orizontală</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Redarea se va pune în pauză când miniplayerul este glisat în afara ecranului</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Ascunde butoanele suprapuse</string>
   <string name="morphe_miniplayer_width_dip_title">Dimensiune implicită</string>
   <string name="morphe_miniplayer_width_dip_summary">Stabilește dimensiunea inițială a ecranului, în pixeli</string>

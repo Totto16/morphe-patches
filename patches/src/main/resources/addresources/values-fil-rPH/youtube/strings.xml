@@ -947,6 +947,8 @@ Kung i-off ang, inirerekomenda na i-clear ang app data para maiwasan ang UI bugs
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Pinipigilan ang pag-drag ng minimize player sa iba\'t ibang sulok ng screen</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">I-disable ang horizontal drag gesture</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Pinipigilan ang pagsasara ng miniplayer sa pamamagitan ng pag-swipe nito pahalang sa screen</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Huwag paganahin ang pagtugtog sa pamamagitan ng pahalang na paghila</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Magpapahinto ang pagtugtog kapag ang miniplayer ay inilayo sa screen</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Itago ang mga overlay button</string>
   <string name="morphe_miniplayer_width_dip_title">Default size</string>
   <string name="morphe_miniplayer_width_dip_summary">Itakda ang panimulang on-screen size, sa pixels</string>

@@ -949,6 +949,8 @@ Nếu tắt đi sau đó, bạn nên xóa dữ liệu ứng dụng để tránh 
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Ngăn không cho kéo trình phát thu nhỏ tới các góc của màn hình</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Tắt cử chỉ kéo ngang</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Ngăn không đóng trình phát thu nhỏ bằng cách vuốt sang bên bên màn hình</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Tắt phát lại bằng cách kéo ngang</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Phát lại sẽ tạm dừng khi miniplayer bị kéo ra khỏi màn hình</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Ẩn nút lớp phủ</string>
   <string name="morphe_miniplayer_width_dip_title">Kích thước mặc định</string>
   <string name="morphe_miniplayer_width_dip_summary">Đặt kích thước ban đầu của màn hình, tính bằng pixel</string>

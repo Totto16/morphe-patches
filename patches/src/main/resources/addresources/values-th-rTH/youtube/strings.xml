@@ -950,6 +950,8 @@ Second \"item\" text"</string>
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">ป้องกันไม่ให้ลากเครื่องเล่นขนาดเล็กไปยังมุมต่างๆ ของหน้าจอ</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">ปิดใช้งานท่าทางการลากแนวนอน</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">ป้องกันไม่ให้ปิดเครื่องเล่นขนาดเล็กโดยการปัดมันในแนวนอนนอกหน้าจอ</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">ปิดการเล่นเมื่อลากแนวนอน</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">การเล่นจะหยุดชั่วคราวเมื่อลากมินิเพลเยอร์ออกจากหน้าจอ</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">ซ่อนปุ่มโอเวอร์เลย์</string>
   <string name="morphe_miniplayer_width_dip_title">ขนาดเริ่มต้น</string>
   <string name="morphe_miniplayer_width_dip_summary">ตั้งค่าขนาดเริ่มต้นบนหน้าจอเป็นพิกเซล</string>

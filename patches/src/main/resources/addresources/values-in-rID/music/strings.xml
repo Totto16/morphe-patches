@@ -115,7 +115,7 @@ YouTube Music 8.x — pudar silang hanya berfungsi pada versi 9.x dan yang lebih
   <string name="morphe_change_start_page_entry_liked_music">Musik yang disukai</string>
   <string name="morphe_change_start_page_entry_playlists">Daftar Putar</string>
   <string name="morphe_change_start_page_entry_search">Pencarian</string>
-  <string name="morphe_change_start_page_entry_subscriptions">Langganan</string>
+  <string name="morphe_change_start_page_entry_subscriptions">Subscriptions</string>
   <!-- layout.compactheader.hideCategoryBarPatch -->
   <string name="morphe_music_hide_category_bar_title">Sembunyikan bilah kategori</string>
   <!-- layout.miniplayer.changeMiniplayerColorPatch -->

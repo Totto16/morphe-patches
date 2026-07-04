@@ -952,6 +952,8 @@ Hatin binveşirin, ew tê mesêr kirin ka danayê peşêbîyê şêniyel ki bug-
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Gradientek paşnavê di ekranê de li ser ekranê ya ku bi şûşa rasterast li şûna rengê wekhev vekişîne</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Çekana mane ya serê horizontal astîne</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Tekreng</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Dêrkirina lîstikê bi dragkirina horîzontal nekarin</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Lîstikê dema ku mînîlîstik ji ekranê derbas bibe rawestî dema</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Dane serlêdanên dorpelê</string>
   <string name="morphe_miniplayer_width_dip_title">Rengê Sebarê</string>
   <string name="morphe_miniplayer_width_dip_summary">Destbîne ranga sereke ya barkê pêşkeftina vîdeoyê</string>

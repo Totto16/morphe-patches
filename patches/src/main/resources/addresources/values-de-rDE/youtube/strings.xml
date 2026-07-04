@@ -950,6 +950,8 @@ Wenn Sie die Funktion später deaktivieren, wird empfohlen, die App-Daten zu lö
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Verhindert das Ziehen des minimierten Players in verschiedene Ecken des Bildschirms</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Horizontale Ziehgeste deaktivieren</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Verhindert das Schließen des Miniplayers, indem Sie ihn horizontal vom Bildschirm wischen</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Deaktivieren Sie die Wiedergabe mit horizontaler Geste</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Die Wiedergabe wird angehalten, wenn der Miniplayer vom Bildschirm gezogen wird</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Overlay-Buttons ausblenden</string>
   <string name="morphe_miniplayer_width_dip_title">Standardgröße</string>
   <string name="morphe_miniplayer_width_dip_summary">Legen Sie die Anfangsgröße auf dem Bildschirm in Pixeln fest</string>

@@ -950,6 +950,8 @@ ReturnYouTubeDislike.com ওপেন করতে এখানে ট্যা�
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">সংক্ষেপিত প্লেয়ারটিকে স্ক্রিনের বিভিন্ন কোণে সরানোর থেকে বিরত করে</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">অনুভূমিক টেনে নেওয়ার ভঙ্গি নিষ্ক্রিয় করুন</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">অনুভূমিকভাবে স্ক্রিন থেকে সোয়াইপ করে মিনিপ্লেয়ার বন্ধ করা থেকে বিরত করে</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">অনুভূমিকভাবে সোয়াইপ করে প্লেব্যাক বন্ধ করুন</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">মিনিপ্লেয়ার স্ক্রিনের বাইরে টেনে আনলে প্লেব্যাক বন্ধ হয়ে যাবে</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">ওভারলে বোতাম লুকান</string>
   <string name="morphe_miniplayer_width_dip_title">ডিফল্ট আকার</string>
   <string name="morphe_miniplayer_width_dip_summary">শুরুতে স্ক্রিনে আকার, পিক্সেল-এ</string>

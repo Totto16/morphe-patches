@@ -947,6 +947,8 @@ Jos tämä poistetaan myöhemmin käytöstä, on suositeltavaa tyhjentää sovel
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Estää pienennetyn soittimen vetämisen näytön eri kulmiin</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Poista vaakasuuntainen vetoele käytöstä</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Estää minisoittimen sulkemisen vetämällä sitä vaakasuunnassa näytöltä pois</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Poista toisto vaakasuuntaisella vedolla</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Toisto pysähtyy, kun minisoitin vedetään näytön ulkopuolelle</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Piilota peittokuvan painikkeet</string>
   <string name="morphe_miniplayer_width_dip_title">Oletuskoko</string>
   <string name="morphe_miniplayer_width_dip_summary">Aseta aloitusnäytän koko pikseleinä</string>

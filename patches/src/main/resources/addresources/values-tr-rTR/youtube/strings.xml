@@ -950,6 +950,8 @@ Daha sonra kapatılırsa, arayüz hatalarını önlemek için uygulama verilerin
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Küçültülmüş oynatıcının ekranın farklı köşelerine sürüklenmesini engeller</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Yatay sürükleme hareketini devre dışı bırak</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Mini oynatıcının yatay olarak ekran dışına kaydırılarak kapatılmasını engeller</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Yatay kaydırma ile oynatmayı devre dışı bırak</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Mini oyuncu ekran dışına kaydırıldığında oynatma duraklatılacaktır</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Katman düğmelerini gizle</string>
   <string name="morphe_miniplayer_width_dip_title">Varsayılan boyut</string>
   <string name="morphe_miniplayer_width_dip_summary">Başlangıç ekran boyutunu piksel cinsinden ayarlayın</string>

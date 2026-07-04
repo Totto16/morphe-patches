@@ -950,6 +950,8 @@ Second \"item\" text"</string>
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">מונע גרירת הנגן הממוזער לפינות שונות של המסך</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">בטל מחוות גרירה אופקית</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">מונע סגירת הנגן הממוזער על ידי החלקתו אופקית מהמסך</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">השבתת השמעה באמצעות גרירה אופקית</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">ההשמעה תיעצר כאשר המיני נגן ייגרר מחוץ למסך</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">הסתר לחצני שכבת-על</string>
   <string name="morphe_miniplayer_width_dip_title">גודל ברירת מחדל</string>
   <string name="morphe_miniplayer_width_dip_summary">הגדר את הגודל הראשוני על המסך, בפיקסלים</string>

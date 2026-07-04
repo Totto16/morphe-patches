@@ -950,6 +950,8 @@ Ha később kikapcsolja, akkor ajánlott az alkalmazás adatait törölni, hogy 
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Megakadályozza a minimalizált lejátszó áthúzását a képernyő különböző sarkaiiba</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Vízszintes húzás letiltása</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Megakadályozza a minilejátszó vízszintes elhúzásával történő bezárását</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Tiltsítási lehetőség letiltása vízszintes húzással</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">A lejátszás szünetel, ha a minilejátszó elhúzódik a képernyőről</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Fedőgomb elrejtése</string>
   <string name="morphe_miniplayer_width_dip_title">Alapértelmezett méret</string>
   <string name="morphe_miniplayer_width_dip_summary">Beállítja a kezdeti képernyőméretet, pixelben</string>

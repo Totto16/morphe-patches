@@ -952,6 +952,8 @@ API 키는 절대로 다른 사람과 공유해서는 안 됩니다. API 키에 
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">최소화된 플레이어를 화면의 다른 모서리로 드래그하는 것을 방지할 수 있습니다</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">수평 드래그 제스처 비활성화하기</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">미니 플레이어를 화면 밖으로 가로로 스와이프하여 닫는 것을 방지할 수 있습니다</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">수평 드래그로 동영상 재생 비활성화하기</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">미니 플레이어를 화면 밖으로 드래그하면 동영상 재생이 일시 중지됩니다</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">오버레이 버튼 숨기기</string>
   <string name="morphe_miniplayer_width_dip_title">기본 크기</string>
   <string name="morphe_miniplayer_width_dip_summary">초기 화면 크기를 설정할 수 있습니다 (픽셀)</string>

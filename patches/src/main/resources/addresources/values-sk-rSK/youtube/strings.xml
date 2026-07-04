@@ -950,6 +950,8 @@ Ak ju neskôr vypnete, odporúča sa vymazať dáta aplikácie, aby sa predišlo
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Skryje tlačidlá Predchádzajúce a Nasledujúce v mini prehrávači, na obrazovke uzamknutia a v ovládacích prvkoch slúchadiel</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Zakázať horizontálne gesto ťahania</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Zabráni ťahaniu časovej osy na obrazovke uzamknutia a v paneloch upozornení</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Zakázať prehrávanie pomocou horizontálneho potiahnutia</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Prehrávanie sa pozastaví, keď sa miniplayer vytiahne mimo obrazovku</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Skryť prekryvné tlačidlá</string>
   <string name="morphe_miniplayer_width_dip_title">Predvolená veľkosť</string>
   <string name="morphe_miniplayer_width_dip_summary">Nastavte počiatočnú veľkosť na obrazovke, v pixeloch</string>

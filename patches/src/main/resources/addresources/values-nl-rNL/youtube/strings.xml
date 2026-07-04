@@ -950,6 +950,8 @@ Als het later wordt uitgeschakeld, wordt aanbevolen om de app-gegevens te wissen
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Voorkomt dat de geminimaliseerde speler naar verschillende hoeken van het scherm wordt gesleept</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Horizontale sleepbeweging uitschakelen</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Voorkomt dat de minispeler horizontaal van het scherm wordt weggeveegd</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Schakel afspelen uit met horizontale sleepbeweging</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Het afspelen wordt gepauzeerd wanneer de miniplayer van het scherm wordt gesleept</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Overlayknoppen verbergen</string>
   <string name="morphe_miniplayer_width_dip_title">Standaardgrootte</string>
   <string name="morphe_miniplayer_width_dip_summary">Stel de begin afmeting op het scherm in, in pixels</string>

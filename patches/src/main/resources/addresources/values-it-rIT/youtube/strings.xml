@@ -950,6 +950,8 @@ Se in seguito verrà disattivata, si consiglia di cancellare i dati dell'app per
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Impedisce di trascinare il lettore minimizzato negli angoli diversi dello schermo</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Disabilita gesto di trascinamento orizzontale</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Impedisce la chiusura del lettore minimizzato scorrendolo orizzontalmente fuori dallo schermo</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Disattiva la riproduzione con trascinamento orizzontale</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">La riproduzione si metterà in pausa quando il miniplayer viene trascinato fuori dallo schermo</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Nascondi i pulsanti in sovrapposizione</string>
   <string name="morphe_miniplayer_width_dip_title">Dimensione predefinita</string>
   <string name="morphe_miniplayer_width_dip_summary">Imposta la dimensione sullo schermo iniziale, in pixel</string>

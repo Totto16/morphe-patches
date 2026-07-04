@@ -950,6 +950,8 @@ OpenRouter.ai उघडण्यासाठी येथे टॅप करा
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">मिनीप्लेअरला (Miniplayer) स्क्रीनच्या वेगवेगळ्या कोपऱ्यात ड्रॅग (Drag) करण्यापासून प्रतिबंधित (Prevent) करते</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title"> horizontal ड्रॅग gesture अक्षम करा</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">मिनीप्लेअरला (Miniplayer) क्षैतिजरित्या (Horizontally) स्वाइप (Swipe) करून बंद करण्यापासून प्रतिबंधित (Prevent) करते</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">व्हिडिओ आडव्या दिशेने ड्रॅग केल्यावर प्लेबॅक बंद करा</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">मिनीप्लेअर स्क्रीनवरून बाहेर ड्रॅग केल्यावर प्लेबॅक थांबेल</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">ओव्हरले बटणे लपवा</string>
   <string name="morphe_miniplayer_width_dip_title">डीआयपी (DIP) मध्ये डीफॉल्ट (Default) आकार</string>
   <string name="morphe_miniplayer_width_dip_summary">सुरुवातीचा आकार सेट करा, पिक्सेलमध्ये (Pixels)</string>

@@ -950,6 +950,8 @@ Second \"item\" text"</string>
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Αποτρέπει τη μεταφορά του μικρογραφικού αναπαραγωγέα στις διαφορετικές γωνίες της οθόνης</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Απενεργοποίηση χειρονομίας οριζόντιας σύρσης</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Αποτρέπει το κλείσιμο του μίνι αναπαραγωγέα με οριζόντια κύλιση από την οθόνη</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Απενεργοποίηση αναπαραγωγής με οριζόντια μεταφορά</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Η αναπαραγωγή θα παύσει όταν το μίνι πλέιερ μεταφερθεί εκτός οθόνης</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Κουμπιά επικάλυψης οθόνης αναπαραγωγής</string>
   <string name="morphe_miniplayer_width_dip_title">Προεπιλεγμένο μέγεθος</string>
   <string name="morphe_miniplayer_width_dip_summary">Ορίστε το αρχικό μέγεθος στην οθόνη, σε pixel</string>

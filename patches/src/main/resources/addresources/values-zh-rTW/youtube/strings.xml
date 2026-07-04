@@ -950,6 +950,8 @@ Second \"item\" text"</string>
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">防止將迷你播放器拖放到螢幕的不同角落</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">停用水平拖曳手勢</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">防止通過水平滑動迷你播放器關閉螢幕</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">停用水平滑動播放</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">迷你播放器滑離螢幕時，播放將會暫停</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">隱藏暫停時顯示的按鈕</string>
   <string name="morphe_miniplayer_width_dip_title">預設大小</string>
   <string name="morphe_miniplayer_width_dip_summary">設定開始的螢幕大小（以像素為單位）</string>

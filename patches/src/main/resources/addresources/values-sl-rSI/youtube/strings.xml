@@ -950,6 +950,8 @@ To bo spremenilo videz in funkcije aplikacije, vendar lahko pride do neznanih st
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Preprečuje vlečenje minimiziranega predajalnika v različne kote zaslona</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Onemogočite vodoravno povlečenjem gesta</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Preprečuje zaprtje mini predajalnika z drsenjem vodoravno po zaslonu</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Onemogoči predvajanje z vodoravnim povlečenjem</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Predvajanje se bo ustavilo, ko mini predvajalnik zapusti zaslon</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Skrijite gumbe prekrivnega okna</string>
   <string name="morphe_miniplayer_width_dip_title">Privzeta velikost</string>
   <string name="morphe_miniplayer_width_dip_summary">Nastavite začetno velikost na zaslonu, v pikah</string>

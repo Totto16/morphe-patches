@@ -946,6 +946,8 @@ Ef kveikt á því síðar er mælt með því að hreinsa gögn forritsins til 
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Kemur í veg fyrir að draga minnkaðan vörpuninn á mismunandi horn skjásins</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Lokað láréttri dragningu</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Kemur í veg fyrir að loka minnkaðan spilarann með því að draga hann láréttur úr sjónarsviðinu</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Gerðu af virkni á vinstrihallu</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Spilun mun hætta þegar mini-spilarinn er dreginn út af skjánum</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Fela yfirborðs hnappa</string>
   <string name="morphe_miniplayer_width_dip_title">Sjálfgengið stærð</string>
   <string name="morphe_miniplayer_width_dip_summary">Stilltu upphaflegu stærðina á skjánum, í pixlum</string>

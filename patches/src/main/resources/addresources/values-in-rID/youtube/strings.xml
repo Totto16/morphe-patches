@@ -117,8 +117,8 @@ Perubahan termasuk:
   <string name="morphe_hide_join_membership_button_title">Sembunyikan tombol Gabung</string>
   <!-- 'Live chat replay' should be translated using the same localized wording YouTube displays for the button.
           This button usually appears when in fullscreen for live streamed videos after opening live chat. -->
-  <string name="morphe_hide_live_chat_replay_button_title">Sembunyikan tombol \'Rekaman live chat\'</string>
-  <string name="morphe_hide_live_chat_replay_button_summary">Menyembunyikan tombol rekaman live chat dalam mode layar penuh</string>
+  <string name="morphe_hide_live_chat_replay_button_title">Sembunyikan tombol \'Putar ulang live chat\'</string>
+  <string name="morphe_hide_live_chat_replay_button_summary">Menyembunyikan tombol putar ulang chat dalam mode layar penuh</string>
   <string name="morphe_hide_medical_panels_title">Sembunyikan panel medis</string>
   <string name="morphe_hide_snackbar_title">Sembunyikan snackbar</string>
   <string name="morphe_hide_subscribers_community_guidelines_title">Sembunyikan panduan pelanggan</string>
@@ -631,7 +631,7 @@ Untuk mengakses Pengaturan, aktifkan tombol Pengaturan melalui Umum → Bilah Al
   <string name="morphe_toolbar_screen_title">Bilah alat</string>
   <string name="morphe_toolbar_screen_summary">Pilih komponen mana yang akan ditampilkan di bilah alat</string>
   <string name="morphe_hide_toolbar_cast_button_title">Sembunyikan tombol Transmisi</string>
-  <string name="morphe_hide_toolbar_chat_button_title">Sembunyikan tombol Pesan</string>
+  <string name="morphe_hide_toolbar_chat_button_title">Sembunyikan tombol Chat</string>
   <string name="morphe_hide_toolbar_create_button_title">Sembunyikan tombol Buat</string>
   <string name="morphe_hide_toolbar_microphone_button_title">Sembunyikan tombol Mikrofon</string>
   <string name="morphe_hide_toolbar_notification_button_title">Sembunyikan tombol Notifikasi</string>
@@ -894,7 +894,7 @@ Jika kemudian dimatikan, disarankan untuk menghapus data aplikasi untuk mencegah
   <!-- layout.startpage.changeStartPagePatch -->
   <string name="morphe_change_start_page_title">Halaman mulai</string>
   <string name="morphe_change_start_page_entry_default">Bawaan</string>
-  <string name="morphe_change_start_page_entry_all_subscriptions">Semua langganan</string>
+  <string name="morphe_change_start_page_entry_all_subscriptions">Semua subscriptions</string>
   <string name="morphe_change_start_page_entry_browse">Jelajahi saluran</string>
   <string name="morphe_change_start_page_entry_courses">Kursus / Pembelajaran</string>
   <string name="morphe_change_start_page_entry_explore">Jelajahi</string>
@@ -913,7 +913,7 @@ Jika kemudian dimatikan, disarankan untuk menghapus data aplikasi untuk mencegah
   <string name="morphe_change_start_page_entry_shopping">Belanja</string>
   <string name="morphe_change_start_page_entry_shorts">Shorts</string>
   <string name="morphe_change_start_page_entry_sports">Olahraga</string>
-  <string name="morphe_change_start_page_entry_subscriptions">Langganan</string>
+  <string name="morphe_change_start_page_entry_subscriptions">Subscriptions</string>
   <string name="morphe_change_start_page_entry_trending">Sedang tren</string>
   <string name="morphe_change_start_page_entry_virtual_reality">Realitas Virtual</string>
   <string name="morphe_change_start_page_entry_watch_later">Tonton nanti</string>
@@ -949,6 +949,8 @@ Jika kemudian dimatikan, disarankan untuk menghapus data aplikasi untuk mencegah
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Mencegah penyeretan pemutar yang diperkecil ke sudut layar yang berbeda</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Nonaktifkan gerakan seret horizontal</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Mencegah penutupan pemutar mini dengan menggesernya secara horizontal dari layar</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Nonaktifkan pemutaran dengan menyeret secara horizontal</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Pemutaran akan jeda saat miniplayer diseret keluar layar</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Sembunyikan tombol hamparan</string>
   <string name="morphe_miniplayer_width_dip_title">Ukuran default</string>
   <string name="morphe_miniplayer_width_dip_summary">Atur ukuran awal di layar, dalam piksel</string>

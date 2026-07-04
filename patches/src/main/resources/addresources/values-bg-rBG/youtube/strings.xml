@@ -948,6 +948,8 @@ Second \"item\" text"</string>
   <string name="morphe_miniplayer_disable_drag_and_drop_summary">Предотвратява плъзгането на минимизирания плейър в различни ъгли на екрана</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_title">Изключете хоризонтално влачене движение</string>
   <string name="morphe_miniplayer_disable_horizontal_drag_summary">Предотвратява затварянето на минииграча чрез плъзгане хоризонтално през екрана</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_title">Деактивиране на възпроизвеждането чрез плъзгане настрани</string>
+  <string name="morphe_miniplayer_disable_horizontal_drag_playback_summary">Възпроизвеждането ще бъде спряно, когато мини-плеърът бъде плъзнат извън екрана</string>
   <string name="morphe_miniplayer_hide_overlay_buttons_title">Скрийте бутоните за надграждане</string>
   <string name="morphe_miniplayer_width_dip_title">Размер по подразбиране</string>
   <string name="morphe_miniplayer_width_dip_summary">Задайте началния размер на екрана, в пиксели</string>
