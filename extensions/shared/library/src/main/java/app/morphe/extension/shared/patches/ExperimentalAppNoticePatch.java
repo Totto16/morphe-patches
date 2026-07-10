@@ -13,11 +13,27 @@ import app.morphe.extension.shared.Utils;
 import app.morphe.extension.shared.settings.SharedSettings;
 import app.morphe.extension.shared.ui.CustomDialog;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 @SuppressWarnings({"deprecation", "unused"})
 public class ExperimentalAppNoticePatch {
 
+    public static String extractAppName(String rawName) {
+
+        Pattern pattern = Pattern.compile("(.*)\\(.*\\)");
+        Matcher matcher = pattern.matcher(rawName);
+        if (matcher.matches()) {
+            return matcher.group(1).trim();
+        } else {
+            return rawName;
+        }
+    }
+
     public static boolean experimentalNoticeShouldBeShown() {
-        String appVersionName = Utils.getAppVersionName();
+        String rawAppVersionName = Utils.getAppVersionName();
+
+        String appVersionName = ExperimentalAppNoticePatch.extractAppName(rawAppVersionName);
         String recommendedAppVersion = Utils.getRecommendedAppVersion();
 
         // The current app is the same or less than the recommended.
