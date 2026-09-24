@@ -90,6 +90,19 @@ public class GmsCoreSupportPatch {
             "0b6c9515afb195fac59601696ba0a7907a0b217ccf720b43148427ccf64343e7";
 
     /**
+     * Signer #1 certificate DN: CN=Unknown, OU=Totto, O=Unknown, L=Unknown, ST=Unknown, C=IT
+     * Signer #1 certificate SHA-256 digest: 61e8598753e738337c4b5199ad7893b88a3ca41ac71cec03a3dbf1ee0c1acad0
+     * Signer #1 certificate SHA-1 digest: 01c7cde66ccb7a0503deb717323f404b69de795f
+     * Signer #1 certificate MD5 digest: 5e5c473bdc23ef65934546112991feb4
+     * 
+     * SHA-256 digest of the signing certificate used by my(Totto's) signed MicroG-RE releases.
+     * Verified against the APKs inside F-droid (7.1.1).
+     */
+    private static final String FDROID_MICROG_SIGNING_CERT_SHA256 =
+            "61e8598753e738337c4b5199ad7893b88a3ca41ac71cec03a3dbf1ee0c1acad0";
+
+
+    /**
      * Other package names that may hold a different MicroG install, which prevents MicroG-RE
      * from being installed or working correctly.
      * <p>
@@ -533,11 +546,15 @@ public class GmsCoreSupportPatch {
     }
 
     private static boolean matchesAnySigningCert(@Nullable Signature[] signatures) {
+        String[] validSignatures = {GmsCoreSupportPatch.OFFICIAL_MICROG_SIGNING_CERT_SHA256, GmsCoreSupportPatch.FDROID_MICROG_SIGNING_CERT_SHA256};
+
         if (signatures == null) return false;
         for (Signature signature : signatures) {
-            if (GmsCoreSupportPatch.OFFICIAL_MICROG_SIGNING_CERT_SHA256.equalsIgnoreCase(
-                    sha256Hex(signature.toByteArray()))) {
-                return true;
+            for (String validSignature : validSignatures) {
+                if (validSignature.equalsIgnoreCase(
+                        sha256Hex(signature.toByteArray()))) {
+                    return true;
+                }
             }
         }
         return false;
@@ -864,7 +881,7 @@ public class GmsCoreSupportPatch {
         //noinspection SwitchStatementWithTooFewBranches
         return switch (getGmsCoreVendorGroupId()) {
             case "app.revanced" -> "https://morphe.software/microg";
-            case "app.morphe" -> "https://morphe.software/microg";
+            case "app.morphe" -> "https://fdroid.totto.lt/repo/"; // atm only my local repo has the GMS Core / MicroG with that name
             default -> getGmsCoreVendorGroupId() + ".android.gms";
         };
     }
